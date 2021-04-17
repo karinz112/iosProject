@@ -2,7 +2,6 @@
 //  MusicPlayerController.swift
 //  mind-manager-ios
 //
-//  Created by Fantastic Five on 25/03/21.
 //
 
 import UIKit

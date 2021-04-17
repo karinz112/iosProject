@@ -2,15 +2,12 @@
 //  SuggestionsController.swift
 //  mind-manager-ios
 //
-//  Created by Fantastic Five on 16/03/21.
 //
 
 import SideMenu
 import UIKit
  class SuggestionsController: UIViewController{
     
-    let happierArray = [#imageLiteral(resourceName: "crossword_happier"), #imageLiteral(resourceName: "crossword_happier2"), #imageLiteral(resourceName: "crossword_happier3")]
-    let moodyArray = [#imageLiteral(resourceName: "crossword_moody")]
     var receivedString = ""
     var mood:String = ""
     
@@ -29,7 +26,7 @@ import UIKit
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         // Get a reference to the second view controller
-        let musicViewController = segue.destination as! MusicPlayerController
+        let musicViewController = segue.destination as! SportController
         
         // Set a variable in the second view controller with the String to pass
         musicViewController.receivedString = mood

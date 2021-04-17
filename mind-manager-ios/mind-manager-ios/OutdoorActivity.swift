@@ -9,7 +9,7 @@ import Foundation
  
 import UIKit
  import MapKit
-class OutdoorController: UIViewController{
+class OutdoorActivity: UIViewController{
     
     @IBOutlet weak var MapController: MKMapView!
     let suggestionsController = SuggestionsController()
