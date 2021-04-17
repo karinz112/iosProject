@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB06C4CD26126147009F011E /* HappierSuggestionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB06C4CC26126147009F011E /* HappierSuggestionsController.swift */; };
-		AB06C4D02612640F009F011E /* HappierMusicPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB06C4CF2612640F009F011E /* HappierMusicPlayerController.swift */; };
-		AB06C4D626126B8E009F011E /* EnergeticSuggestionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB06C4D526126B8E009F011E /* EnergeticSuggestionsController.swift */; };
-		AB06C4DD26126E05009F011E /* EnergeticMusicPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB06C4DC26126E05009F011E /* EnergeticMusicPlayerController.swift */; };
-		AB06C4E5261274CE009F011E /* CalmerSuggestionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB06C4E4261274CE009F011E /* CalmerSuggestionsController.swift */; };
-		AB06C4EC26127754009F011E /* CalmerMusicPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB06C4EB26127754009F011E /* CalmerMusicPlayerController.swift */; };
-		AB06C4F326127C8C009F011E /* RelaxedSuggestionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB06C4F226127C8C009F011E /* RelaxedSuggestionsController.swift */; };
-		AB06C4F926127E38009F011E /* RelaxedMusicPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB06C4F826127E38009F011E /* RelaxedMusicPlayerController.swift */; };
-		AB8FD2E2262A224D00C6C255 /* CalmerOutdoorsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8FD2E1262A224D00C6C255 /* CalmerOutdoorsController.swift */; };
+		86131BA42610F9AE00CF8F67 /* MusicPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86131BA32610F9AE00CF8F67 /* MusicPlayerController.swift */; };
+		86131BAC2611199500CF8F67 /* OutdoorActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86131BAB2611199500CF8F67 /* OutdoorActivity.swift */; };
+		86131BAF26111AE200CF8F67 /* SportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86131BAE26111AE200CF8F67 /* SportController.swift */; };
+		AB460668262B6DA10043F1B1 /* AnswerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB460667262B6DA10043F1B1 /* AnswerModel.swift */; };
+		AB46066B262B6DDA0043F1B1 /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB46066A262B6DDA0043F1B1 /* QuestionModel.swift */; };
+		AB46066E262B6E090043F1B1 /* SuggestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB46066D262B6E090043F1B1 /* SuggestionModel.swift */; };
+		AB460671262B6E380043F1B1 /* AnswerReadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB460670262B6E380043F1B1 /* AnswerReadModel.swift */; };
+		AB460674262B6E670043F1B1 /* QuestionReadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB460673262B6E670043F1B1 /* QuestionReadModel.swift */; };
+		AB460677262B6E960043F1B1 /* SuggestionReadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB460676262B6E960043F1B1 /* SuggestionReadModel.swift */; };
+		AB463C032601428500860BA2 /* SuggestionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB463C022601428500860BA2 /* SuggestionProtocol.swift */; };
+		ABA1DBA3260E375800A87CBD /* MoviesPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA1DBA2260E375800A87CBD /* MoviesPlayerController.swift */; };
 		ABA471B225F29D7C0086E8DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA471B125F29D7C0086E8DA /* AppDelegate.swift */; };
 		ABA471B425F29D7C0086E8DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA471B325F29D7C0086E8DA /* SceneDelegate.swift */; };
 		ABA471B625F29D7C0086E8DA /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA471B525F29D7C0086E8DA /* WelcomeController.swift */; };
@@ -23,24 +25,26 @@
 		ABA471BC25F29D7C0086E8DA /* mind_manager_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ABA471BA25F29D7C0086E8DA /* mind_manager_ios.xcdatamodeld */; };
 		ABA471BE25F29D7F0086E8DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABA471BD25F29D7F0086E8DA /* Assets.xcassets */; };
 		ABA471C125F29D7F0086E8DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA471BF25F29D7F0086E8DA /* LaunchScreen.storyboard */; };
-		ABDD00B9260C03D7006C18C0 /* MoodySuggestionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDD00B8260C03D7006C18C0 /* MoodySuggestionsController.swift */; };
+		ABDD00B9260C03D7006C18C0 /* SuggestionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDD00B8260C03D7006C18C0 /* SuggestionsController.swift */; };
 		ABF282C12603CD0B007DEF0D /* QuestionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF282C02603CD0B007DEF0D /* QuestionsController.swift */; };
-		ABF34533260D639100832962 /* MoodyMusicPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF34532260D639100832962 /* MoodyMusicPlayerController.swift */; };
+		ABF282C42603CD88007DEF0D /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF282C32603CD88007DEF0D /* GameController.swift */; };
 		D6C9BC0919579AA6FF30481F /* Pods_mind_manager_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0A877A4568E9C5F16E2D9F /* Pods_mind_manager_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6615581FCA70DB2078130EB2 /* Pods-mind-manager-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mind-manager-ios.release.xcconfig"; path = "Target Support Files/Pods-mind-manager-ios/Pods-mind-manager-ios.release.xcconfig"; sourceTree = "<group>"; };
 		7F0A877A4568E9C5F16E2D9F /* Pods_mind_manager_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mind_manager_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB06C4CC26126147009F011E /* HappierSuggestionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappierSuggestionsController.swift; sourceTree = "<group>"; };
-		AB06C4CF2612640F009F011E /* HappierMusicPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappierMusicPlayerController.swift; sourceTree = "<group>"; };
-		AB06C4D526126B8E009F011E /* EnergeticSuggestionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergeticSuggestionsController.swift; sourceTree = "<group>"; };
-		AB06C4DC26126E05009F011E /* EnergeticMusicPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergeticMusicPlayerController.swift; sourceTree = "<group>"; };
-		AB06C4E4261274CE009F011E /* CalmerSuggestionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalmerSuggestionsController.swift; sourceTree = "<group>"; };
-		AB06C4EB26127754009F011E /* CalmerMusicPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalmerMusicPlayerController.swift; sourceTree = "<group>"; };
-		AB06C4F226127C8C009F011E /* RelaxedSuggestionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxedSuggestionsController.swift; sourceTree = "<group>"; };
-		AB06C4F826127E38009F011E /* RelaxedMusicPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxedMusicPlayerController.swift; sourceTree = "<group>"; };
-		AB8FD2E1262A224D00C6C255 /* CalmerOutdoorsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalmerOutdoorsController.swift; sourceTree = "<group>"; };
+		86131BA32610F9AE00CF8F67 /* MusicPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerController.swift; sourceTree = "<group>"; };
+		86131BAB2611199500CF8F67 /* OutdoorActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutdoorActivity.swift; sourceTree = "<group>"; };
+		86131BAE26111AE200CF8F67 /* SportController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportController.swift; sourceTree = "<group>"; };
+		AB460667262B6DA10043F1B1 /* AnswerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerModel.swift; sourceTree = "<group>"; };
+		AB46066A262B6DDA0043F1B1 /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		AB46066D262B6E090043F1B1 /* SuggestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionModel.swift; sourceTree = "<group>"; };
+		AB460670262B6E380043F1B1 /* AnswerReadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerReadModel.swift; sourceTree = "<group>"; };
+		AB460673262B6E670043F1B1 /* QuestionReadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionReadModel.swift; sourceTree = "<group>"; };
+		AB460676262B6E960043F1B1 /* SuggestionReadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionReadModel.swift; sourceTree = "<group>"; };
+		AB463C022601428500860BA2 /* SuggestionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionProtocol.swift; sourceTree = "<group>"; };
+		ABA1DBA2260E375800A87CBD /* MoviesPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesPlayerController.swift; sourceTree = "<group>"; };
 		ABA471AE25F29D7C0086E8DA /* mind-manager-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mind-manager-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA471B125F29D7C0086E8DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABA471B325F29D7C0086E8DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,9 +54,9 @@
 		ABA471BD25F29D7F0086E8DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABA471C025F29D7F0086E8DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABA471C225F29D7F0086E8DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ABDD00B8260C03D7006C18C0 /* MoodySuggestionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodySuggestionsController.swift; sourceTree = "<group>"; };
+		ABDD00B8260C03D7006C18C0 /* SuggestionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsController.swift; sourceTree = "<group>"; };
 		ABF282C02603CD0B007DEF0D /* QuestionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsController.swift; sourceTree = "<group>"; };
-		ABF34532260D639100832962 /* MoodyMusicPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodyMusicPlayerController.swift; sourceTree = "<group>"; };
+		ABF282C32603CD88007DEF0D /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		D1E8ACBCDEA6B4AD011B38D4 /* Pods-mind-manager-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mind-manager-ios.debug.xcconfig"; path = "Target Support Files/Pods-mind-manager-ios/Pods-mind-manager-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +81,19 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AB460666262B6D570043F1B1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AB460667262B6DA10043F1B1 /* AnswerModel.swift */,
+				AB46066A262B6DDA0043F1B1 /* QuestionModel.swift */,
+				AB46066D262B6E090043F1B1 /* SuggestionModel.swift */,
+				AB460670262B6E380043F1B1 /* AnswerReadModel.swift */,
+				AB460673262B6E670043F1B1 /* QuestionReadModel.swift */,
+				AB460676262B6E960043F1B1 /* SuggestionReadModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		ABA471A525F29D7C0086E8DA = {
 			isa = PBXGroup;
 			children = (
@@ -98,26 +115,23 @@
 		ABA471B025F29D7C0086E8DA /* mind-manager-ios */ = {
 			isa = PBXGroup;
 			children = (
+				AB460666262B6D570043F1B1 /* Models */,
 				ABA471B125F29D7C0086E8DA /* AppDelegate.swift */,
-				ABA471BD25F29D7F0086E8DA /* Assets.xcassets */,
-				AB06C4EB26127754009F011E /* CalmerMusicPlayerController.swift */,
-				AB06C4E4261274CE009F011E /* CalmerSuggestionsController.swift */,
-				AB06C4DC26126E05009F011E /* EnergeticMusicPlayerController.swift */,
-				AB06C4D526126B8E009F011E /* EnergeticSuggestionsController.swift */,
-				AB06C4CF2612640F009F011E /* HappierMusicPlayerController.swift */,
-				AB06C4CC26126147009F011E /* HappierSuggestionsController.swift */,
-				ABA471C225F29D7F0086E8DA /* Info.plist */,
-				ABA471BF25F29D7F0086E8DA /* LaunchScreen.storyboard */,
-				ABA471B725F29D7C0086E8DA /* Main.storyboard */,
-				AB8FD2E1262A224D00C6C255 /* CalmerOutdoorsController.swift */,
-				ABA471BA25F29D7C0086E8DA /* mind_manager_ios.xcdatamodeld */,
-				ABF34532260D639100832962 /* MoodyMusicPlayerController.swift */,
-				ABDD00B8260C03D7006C18C0 /* MoodySuggestionsController.swift */,
-				ABF282C02603CD0B007DEF0D /* QuestionsController.swift */,
-				AB06C4F826127E38009F011E /* RelaxedMusicPlayerController.swift */,
-				AB06C4F226127C8C009F011E /* RelaxedSuggestionsController.swift */,
 				ABA471B325F29D7C0086E8DA /* SceneDelegate.swift */,
 				ABA471B525F29D7C0086E8DA /* WelcomeController.swift */,
+				AB463C022601428500860BA2 /* SuggestionProtocol.swift */,
+				ABA471B725F29D7C0086E8DA /* Main.storyboard */,
+				ABDD00B8260C03D7006C18C0 /* SuggestionsController.swift */,
+				ABF282C32603CD88007DEF0D /* GameController.swift */,
+				ABF282C02603CD0B007DEF0D /* QuestionsController.swift */,
+				ABA471BD25F29D7F0086E8DA /* Assets.xcassets */,
+				ABA471BF25F29D7F0086E8DA /* LaunchScreen.storyboard */,
+				ABA471C225F29D7F0086E8DA /* Info.plist */,
+				ABA471BA25F29D7C0086E8DA /* mind_manager_ios.xcdatamodeld */,
+				ABA1DBA2260E375800A87CBD /* MoviesPlayerController.swift */,
+				86131BA32610F9AE00CF8F67 /* MusicPlayerController.swift */,
+				86131BAB2611199500CF8F67 /* OutdoorActivity.swift */,
+				86131BAE26111AE200CF8F67 /* SportController.swift */,
 			);
 			path = "mind-manager-ios";
 			sourceTree = "<group>";
@@ -244,20 +258,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABDD00B9260C03D7006C18C0 /* MoodySuggestionsController.swift in Sources */,
-				AB06C4F926127E38009F011E /* RelaxedMusicPlayerController.swift in Sources */,
-				AB8FD2E2262A224D00C6C255 /* CalmerOutdoorsController.swift in Sources */,
-				AB06C4DD26126E05009F011E /* EnergeticMusicPlayerController.swift in Sources */,
-				AB06C4EC26127754009F011E /* CalmerMusicPlayerController.swift in Sources */,
+				86131BAF26111AE200CF8F67 /* SportController.swift in Sources */,
+				AB460668262B6DA10043F1B1 /* AnswerModel.swift in Sources */,
+				86131BA42610F9AE00CF8F67 /* MusicPlayerController.swift in Sources */,
+				ABDD00B9260C03D7006C18C0 /* SuggestionsController.swift in Sources */,
 				ABA471B625F29D7C0086E8DA /* WelcomeController.swift in Sources */,
-				AB06C4F326127C8C009F011E /* RelaxedSuggestionsController.swift in Sources */,
-				AB06C4E5261274CE009F011E /* CalmerSuggestionsController.swift in Sources */,
+				ABA1DBA3260E375800A87CBD /* MoviesPlayerController.swift in Sources */,
+				AB463C032601428500860BA2 /* SuggestionProtocol.swift in Sources */,
+				AB460674262B6E670043F1B1 /* QuestionReadModel.swift in Sources */,
+				AB46066B262B6DDA0043F1B1 /* QuestionModel.swift in Sources */,
 				ABA471BC25F29D7C0086E8DA /* mind_manager_ios.xcdatamodeld in Sources */,
-				AB06C4D626126B8E009F011E /* EnergeticSuggestionsController.swift in Sources */,
 				ABA471B225F29D7C0086E8DA /* AppDelegate.swift in Sources */,
-				AB06C4CD26126147009F011E /* HappierSuggestionsController.swift in Sources */,
-				AB06C4D02612640F009F011E /* HappierMusicPlayerController.swift in Sources */,
-				ABF34533260D639100832962 /* MoodyMusicPlayerController.swift in Sources */,
+				AB460677262B6E960043F1B1 /* SuggestionReadModel.swift in Sources */,
+				ABF282C42603CD88007DEF0D /* GameController.swift in Sources */,
+				86131BAC2611199500CF8F67 /* OutdoorActivity.swift in Sources */,
+				AB46066E262B6E090043F1B1 /* SuggestionModel.swift in Sources */,
+				AB460671262B6E380043F1B1 /* AnswerReadModel.swift in Sources */,
 				ABA471B425F29D7C0086E8DA /* SceneDelegate.swift in Sources */,
 				ABF282C12603CD0B007DEF0D /* QuestionsController.swift in Sources */,
 			);
