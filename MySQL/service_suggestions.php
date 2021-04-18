@@ -1,7 +1,7 @@
 <?php
 
     // Create connection
-    $con=mysqli_connect("mind-manager-do-user-8581613-0.b.db.ondigitalocean.com>
+    $con=mysqli_connect("mind-manager-do-user-8581613-0.b.db.ondigitalocean.com:25060","doadmin","bys508oal0qpna4x","mindmanager");
 
     // Check connection
     if (mysqli_connect_errno())
@@ -35,3 +35,5 @@
     // Close connections
     mysqli_close($con);
     ?>
+
+
