@@ -21,74 +21,176 @@ class OutdoorsController: UIViewController {
     
     var receivedString = ""
     
+    @IBOutlet weak var lblOutdoor: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let randomLoc = locationArray.randomElement()
         
+            
+        let latDelta: CLLocationDegrees = 0.01
+
+        let lonDelta: CLLocationDegrees = 0.01
+        
+        lblOutdoor.text = receivedString
+
+
         if randomLoc == "fishing" {
-            let centerLocation = CLLocation(latitude: 43.64106388801521, longitude: -79.46687074751708)
-            goToLocation(location: centerLocation)
+            let latitude = 43.64106388801521
+            let longitude = -79.46687074751708
             lblOutdoorActivity.text = "Grenadier Pond"
             
-            mapView.showsUserLocation = true
-        }
-        if randomLoc == "parks" {
-            let centerLocation = CLLocation(latitude: 43.64655677959097, longitude: -79.46369134087968)
-            goToLocation(location: centerLocation)
-            lblOutdoorActivity.text = "High Park"
+            let location: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
             
-            mapView.showsUserLocation = true
+            let span: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
+            let region: MKCoordinateRegion = MKCoordinateRegion(center: location, span: span)
+            self.mapView.setRegion(region, animated: true)
+            
+            let annotation: MKPointAnnotation = MKPointAnnotation()
+            annotation.coordinate = location
+            annotation.title = "Grenadier Pond"
+
+            self.mapView.addAnnotation(annotation)
+        }
+        
+        if randomLoc == "parks" {
+            let latitude = 43.64655677959097
+            let longitude = -79.46369134087968
+            lblOutdoorActivity.text = "High Park"
+
+            let location: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+            
+            let span: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
+            let region: MKCoordinateRegion = MKCoordinateRegion(center: location, span: span)
+            self.mapView.setRegion(region, animated: true)
+            
+            let annotation: MKPointAnnotation = MKPointAnnotation()
+            annotation.coordinate = location
+            annotation.title = "High Park"
+
+            self.mapView.addAnnotation(annotation)
         }
         if randomLoc == "hangout" {
-            let centerLocation = CLLocation(latitude: 43.64241837384692, longitude: -79.3859736076201)
-            goToLocation(location: centerLocation)
+            let latitude = 43.64241837384692
+            let longitude = -79.3859736076201
             lblOutdoorActivity.text = "Ripley's Aquarium of Canada"
+
+            let location: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
             
-            mapView.showsUserLocation = true
+            let span: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
+            let region: MKCoordinateRegion = MKCoordinateRegion(center: location, span: span)
+            self.mapView.setRegion(region, animated: true)
+            
+            let annotation: MKPointAnnotation = MKPointAnnotation()
+            annotation.coordinate = location
+            annotation.title = "Ripley's Aquarium of Canada"
+
+            self.mapView.addAnnotation(annotation)
+        
         }
         if randomLoc == "running track" {
-            let centerLocation = CLLocation(latitude: 43.68058119852502, longitude: -79.40405219491038)
-            goToLocation(location: centerLocation)
+            let latitude = 43.68058119852502
+            let longitude = -79.40405219491038
             lblOutdoorActivity.text = "Roycroft Park Lands"
+
+            let location: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
             
-            mapView.showsUserLocation = true
+            let span: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
+            let region: MKCoordinateRegion = MKCoordinateRegion(center: location, span: span)
+            self.mapView.setRegion(region, animated: true)
+            
+            let annotation: MKPointAnnotation = MKPointAnnotation()
+            annotation.coordinate = location
+            annotation.title = "Roycroft Park Lands"
+
+            self.mapView.addAnnotation(annotation)
         }
         if randomLoc == "paintball" {
-            let centerLocation = CLLocation(latitude: 43.70365967562423, longitude: -79.45592088127125)
-            goToLocation(location: centerLocation)
+            let latitude = 43.70365967562423
+            let longitude = -79.45592088127125
             lblOutdoorActivity.text = "Sgt Splatters Paintball"
+
+            let location: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
             
-            mapView.showsUserLocation = true
+            let span: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
+            let region: MKCoordinateRegion = MKCoordinateRegion(center: location, span: span)
+            self.mapView.setRegion(region, animated: true)
+            
+            let annotation: MKPointAnnotation = MKPointAnnotation()
+            annotation.coordinate = location
+            annotation.title = "Sgt Splatters Paintball"
+
+            self.mapView.addAnnotation(annotation)
         }
         if randomLoc == "biking trail" {
-            let centerLocation = CLLocation(latitude: 43.63681690164043, longitude: -79.46531656287296)
-            goToLocation(location: centerLocation)
+            let latitude = 43.63681690164043
+            let longitude = -79.46531656287296
             lblOutdoorActivity.text = "Sunnyside Bike Park"
+
+            let location: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
             
-            mapView.showsUserLocation = true
+            let span: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
+            let region: MKCoordinateRegion = MKCoordinateRegion(center: location, span: span)
+            self.mapView.setRegion(region, animated: true)
+            
+            let annotation: MKPointAnnotation = MKPointAnnotation()
+            annotation.coordinate = location
+            annotation.title = "Sunnyside Bike Park"
+
+            self.mapView.addAnnotation(annotation)
+
         }
         if randomLoc == "shopping" {
-            let centerLocation = CLLocation(latitude: 43.655838139429626, longitude: -79.43569939132914)
-            goToLocation(location: centerLocation)
+            let latitude = 43.655838139429626
+            let longitude = -79.43569939132914
             lblOutdoorActivity.text = "Dufferin Mall"
+
+            let location: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
             
-            mapView.showsUserLocation = true
+            let span: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
+            let region: MKCoordinateRegion = MKCoordinateRegion(center: location, span: span)
+            self.mapView.setRegion(region, animated: true)
+            
+            let annotation: MKPointAnnotation = MKPointAnnotation()
+            annotation.coordinate = location
+            annotation.title = "Dufferin Mall"
+
+            self.mapView.addAnnotation(annotation)
         }
         if randomLoc == "massage therapy" {
-            let centerLocation = CLLocation(latitude: 43.66524825495547, longitude: -79.41203234539495)
-            goToLocation(location: centerLocation)
+            let latitude = 43.66524825495547
+            let longitude = -79.41203234539495
             lblOutdoorActivity.text = "Ted Thomas Registered Massage Therapist"
+
+            let location: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
             
-            mapView.showsUserLocation = true
+            let span: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
+            let region: MKCoordinateRegion = MKCoordinateRegion(center: location, span: span)
+            self.mapView.setRegion(region, animated: true)
+            
+            let annotation: MKPointAnnotation = MKPointAnnotation()
+            annotation.coordinate = location
+            annotation.title = "Ted Thomas Registered Massage Therapist"
+
+            self.mapView.addAnnotation(annotation)
         }
         if randomLoc == "" {
-            let centerLocation = CLLocation(latitude: 43.6705, longitude: -79.3936)
-            goToLocation(location: centerLocation)
+            let latitude = 43.6705
+            let longitude = -79.3936
             lblOutdoorActivity.text = "Casa Loma"
+
+            let location: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
             
-            mapView.showsUserLocation = true
+            let span: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
+            let region: MKCoordinateRegion = MKCoordinateRegion(center: location, span: span)
+            self.mapView.setRegion(region, animated: true)
+            
+            let annotation: MKPointAnnotation = MKPointAnnotation()
+            annotation.coordinate = location
+            annotation.title = "Casa Loma"
+
+            self.mapView.addAnnotation(annotation)
         }
         
     }

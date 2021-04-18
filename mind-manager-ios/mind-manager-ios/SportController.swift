@@ -23,7 +23,8 @@ class SportController: UIViewController {
         }
         
         
-        override func viewDidLoad() {
+    @IBOutlet weak var lblSport: UILabel!
+    override func viewDidLoad() {
             super.viewDidLoad()
             
             let randomLoc = locationArray.randomElement()
@@ -32,6 +33,8 @@ class SportController: UIViewController {
 
             let lonDelta: CLLocationDegrees = 0.01
             
+            lblSport.text = receivedString
+
             if randomLoc == "yoga" {
                 let latitude = 43.64756989927676
                 let longitude = -79.42038278231642

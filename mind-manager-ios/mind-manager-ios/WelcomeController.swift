@@ -9,36 +9,54 @@ import UIKit
 
 class WelcomeController: UIViewController{
     
-    var mood:String = ""
     
     // More Moody option
     @IBAction func btnMoody(_ sender: Any) {
-        mood = "Moody"
+
+        let displayVC : SuggestionsController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SuggestionsId") as! SuggestionsController
+        displayVC.receivedString = "Moody"
+       
+        self.present(displayVC, animated: true, completion: nil)
     }
     
     // Happier option
     @IBAction func btnHappier(_ sender: Any) {
-        mood = "Happier"
+        // the name for UIStoryboard is the file name of the storyboard without the .storyboard extension
+        let displayVC : SuggestionsController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SuggestionsId") as! SuggestionsController
+        displayVC.receivedString = "Happier"
+       
+        self.present(displayVC, animated: true, completion: nil)
     }
     
     // More Energetic option
     @IBAction func btnEnergetic(_ sender: Any) {
-        mood = "Energetic"
+        let displayVC : SuggestionsController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SuggestionsId") as! SuggestionsController
+        displayVC.receivedString = "Energetic"
+       
+        self.present(displayVC, animated: true, completion: nil)
     }
     
     // Calmer option
     @IBAction func btnCalmer(_ sender: Any) {
-        mood = "Calmer"
+        let displayVC : SuggestionsController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SuggestionsId") as! SuggestionsController
+        displayVC.receivedString = "Calmer"
+       
+        self.present(displayVC, animated: true, completion: nil)
     }
     
     // More Relaxed option
     @IBAction func btnRelaxed(_ sender: Any) {
-        mood = "Relaxed"
+        let displayVC : SuggestionsController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SuggestionsId") as! SuggestionsController
+        displayVC.receivedString = "Relaxed"
+       
+        self.present(displayVC, animated: true, completion: nil)
+
     }
     
     // I Don't Know option
     @IBAction func btnIDontKnow(_ sender: Any) {
-        mood = ""
+        
+        
     }
     
     override func viewDidLoad() {
@@ -48,14 +66,6 @@ class WelcomeController: UIViewController{
     
     @IBOutlet weak var lblLogin: UIBarButtonItem!
     
-//    // This function is called before the segue
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//
-//        // Get a reference to the second view controller
-//        let suggestionViewController = segue.destination as! SuggestionsController
-//        let questionViewController = segue.destination as! QuestionsController        // Set a variable in the second view controller with the String to pass
-//        suggestionViewController.receivedString = mood
-//    }
 }
 
 

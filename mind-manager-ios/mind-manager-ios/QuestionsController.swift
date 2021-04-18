@@ -33,7 +33,9 @@ class QuestionsController: UIViewController, QuestionReadModelProtocol, AnswerRe
     var num1:Int = 0
     var num2:Int = 0
     var num3:Int = 0
+    var num4:Int = 0
     var receivedString = ""
+    let moods:[String]=["Relaxed","Calmer","Happier","Energetic", "Moody"]
 
  
     @IBAction func btnRandom1(_ sender: UIButton) {
@@ -44,8 +46,12 @@ class QuestionsController: UIViewController, QuestionReadModelProtocol, AnswerRe
     @IBOutlet weak var btnSubmitCheck: UIButton!
     
     @IBAction func btnSubmit(_ sender: Any) {
-        mood = "Relaxed"
-    }
+        num4 = randomNum2(items:4)
+        mood = moods[num4]
+        let displayVC : SuggestionsController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SuggestionsId") as! SuggestionsController
+        displayVC.receivedString = mood
+       
+        self.present(displayVC, animated: true, completion: nil)    }
  
     @IBAction func btnQ1A1(_ sender: Any) {
         btnQ1A2Check.isEnabled = false
@@ -90,15 +96,7 @@ class QuestionsController: UIViewController, QuestionReadModelProtocol, AnswerRe
         }
     }
  
-    // This function is called before the segue
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        // Get a reference to the second view controller
-        let suggestionViewController = segue.destination as! SuggestionsController
-        
-        // Set a variable in the second view controller with the String to pass
-        suggestionViewController.receivedString = mood
-    }
+ 
     
     var counter = 0
      override func viewDidLoad() {
@@ -224,7 +222,12 @@ class QuestionsController: UIViewController, QuestionReadModelProtocol, AnswerRe
         return random
     }
     
-
+    func randomNum2(items: Int) -> Int {
+        let max: Int = items
+        let random = randomInt(max: max)
+        return random
+    }
+    
     @IBAction func btnQ2A1(_ sender: UIButton) {
         btnQ2A2Check.isEnabled = false
         btnQ2A2Check.backgroundColor = UIColor.gray

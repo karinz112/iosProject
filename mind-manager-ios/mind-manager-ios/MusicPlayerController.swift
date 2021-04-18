@@ -33,6 +33,7 @@ class MusicPlayerController: UIViewController, SuggestionReadModelProtocol, YTPl
         let suggestionReadModel = SuggestionReadModel()
         suggestionReadModel.delegate = self
         suggestionReadModel.downloadItems()
+        lblMood.text = receivedString;
         
      }
     
@@ -64,6 +65,8 @@ class MusicPlayerController: UIViewController, SuggestionReadModelProtocol, YTPl
         let rand: Int = Int(arc4random())
         return (rand % max) + 1
     }
+    
+    @IBOutlet weak var lblMood: UILabel!
     
     func randomNum(items: NSArray) -> Int {
         let max: Int = items.count-1
